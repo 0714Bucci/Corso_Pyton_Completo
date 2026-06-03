@@ -1,28 +1,24 @@
-""" Liste in pyton: strutture di dati che si possono salvare insieme
+#Liste in pyton: strutture di dati che si possono salvare insieme
+#puoi mettere più tipologie di dati
 
-Studenti  = ['Luca', 'Luigi', 'Andrea', 'Rudy']
+Studenti  = ['Luca', 'Luigi', 'Andrea', 'Rudy','Rudy', 'Claudia']
 print (Studenti)
 
 Studenti.append('Teresa')
 print(Studenti)
 
-accesso agli elementi
+#accesso agli elementi
 print(Studenti[5])
 
-"""
+Studenti.append('Marco')
+print(Studenti)
+print(Studenti[-1])
 
-#esercizio
+#modificare gli elementi
+Studenti[0] = 'Gaia'#metti posizione e nuovo valore
+print(Studenti[0])
 
-cliente = input('Buongiorno, selezioni operazione da eseguire: ')
-if cliente == 'prelievo':
-    importo = int(input('Quale importo vorrebbe prelevare? '))
-    if importo == 1000:
-        print('Erogazione in corso')
-    elif importo == 3000:
-        print('Importo non erogabile')
-    else:
-        print('Terminale al momento non disponibile')
-elif cliente == 'estratto conto mensile':
-    print('estratto conto dei movimenti degli ultimi 30 giorni')
-else:
-    print('Operazione non disponibile')
+#rimuovere elementi
+Studenti.remove(Studenti[6])
+print(Studenti)
+
